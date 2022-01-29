@@ -9,7 +9,7 @@ platform:
 
 steps:
   - name: build
-    image: codestation/drone-docker
+    image: ghcr.io/codestation/drone-docker
     settings:
       repo: registry.megpoid.xyz/codestation/socat
       tags: latest
