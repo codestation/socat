@@ -11,9 +11,9 @@ steps:
   - name: build
     image: ghcr.io/codestation/drone-docker
     settings:
-      repo: registry.megpoid.xyz/codestation/socat
+      repo: registry.megpoid.dev/codestation/socat
       tags: latest
-      registry: registry.megpoid.xyz
+      registry: registry.megpoid.dev
       buildkit: true
       username:
         from_secret: docker_username
@@ -29,7 +29,7 @@ steps:
       template: |
         {
           "images": [
-            "registry.megpoid.xyz/codestation/socat"
+            "registry.megpoid.dev/codestation/socat"
           ]
         }
 
